@@ -131,7 +131,7 @@ module CanCan
         @params[@options[:id_param]]
       else
         @params[parent? ? :"#{name}_id" : :id]
-      end.to_s
+      end
     end
 
     def member_action?
